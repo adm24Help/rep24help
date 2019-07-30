@@ -6,31 +6,31 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Buscar Profissional" />
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Solicitar Serviço" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@android:drawable/ic_menu_myplaces"
             android:title="Disponibilizar Serviço" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_menu_edit"
             android:title="Perfil" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Histórico" />
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Telas" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@android:drawable/ic_menu_share"
                 android:title="Compartilhar app" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@android:drawable/stat_sys_phone_call_forward"
                 android:title="Contato" />
         </menu>
     </item>
