@@ -18,6 +18,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,6 +33,8 @@ public class PrincipalActivity extends AppCompatActivity
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mFirebaseUser;
     private String mUsername;
+    private FragmentManager fragmentManager;
+
 
 
     @Override
@@ -49,7 +54,8 @@ public class PrincipalActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+        fragmentManager = getSupportFragmentManager();
+        showFragment(new HomeActivity(),"HomeActivity");
 
     }
 
@@ -87,26 +93,37 @@ public class PrincipalActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+    switch (id)
+    {
 
-        if (id == R.id.nav_camera) { //solicitar
-          //  Intent intent = new Intent(this, LoginActivity.class);
-           // startActivity(intent);
-        } else if (id == R.id.nav_gallery) {//disponibilizar
-            //Intent intent = new Intent(this, CadastroPActivity.class);
-            //startActivity(intent);
-        } else if (id == R.id.nav_slideshow) {//telas
-            Intent intent = new Intent(this, TelasActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_manage) {//perfil
+        case R.id.nav_home:
+            showFragment(new HomeActivity(),"HomeActivity");
+            break;
 
-        } else if (id == R.id.nav_share) { //compartilhar
+        case R.id.nav_buscar:
+            showFragment(new BuscaActivity(),"BuscaActivity");
+            break;
 
-        } else if (id == R.id.nav_send) { //contato
+        case R.id.nav_Cadastro:
+            showFragment(new Cadastro(),"Cadastro");
+            break;
 
-        }
+        case R.id.nav_disponib:
+            showFragment(new DisponibilizarActivity(),"DisponibilizarActivity");
+            break;
+
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+        private void showFragment(Fragment fragment, String name){
+
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.container, fragment,name);
+        transaction.commit();
+    }
+
 }

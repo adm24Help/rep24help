@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformacoesPorfiActivity"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:numStars="5"
+        android:stepSize="5"
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/avatar"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Antonio Carlos F.Lima"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="eletrical@gmail.com"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textViewTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(81)978255899"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textViewProfi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eletricista"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/editTextApre"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tenho mais de 20 anos de experiência na profissão. Faço serviços em residências e condomínios."/>
+        />
+
+    <Button
+        android:id="@+id/btSolicitar_servico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solicitar Serviço"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/botao_redondo"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textoSucesso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solicitação enviada com sucesso!"
+        android:textColor="#3B923E"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "584217054632",
-    "firebase_url": "https://help-app-d6b27.firebaseio.com",
-    "project_id": "help-app-d6b27",
-    "storage_bucket": "help-app-d6b27.appspot.com"
+    "project_number": "986917273019",
+    "firebase_url": "https://help-app-c0273.firebaseio.com",
+    "project_id": "help-app-c0273",
+    "storage_bucket": "help-app-c0273.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:584217054632:android:8c001e7a34f3cb7d",
+        "mobilesdk_app_id": "1:986917273019:android:8c001e7a34f3cb7d",
         "android_client_info": {
           "package_name": "com.br.ifpe.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "584217054632-8h8q8n6oqbe9iuaisdllog2j40cuhv6s.apps.googleusercontent.com",
+          "client_id": "986917273019-k1norl3ddp5ng3jtnihhtjj8iuas3dp6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.br.ifpe.myapplication",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "584217054632-ea3bvljk4kdceu7tootie2db76thqooi.apps.googleusercontent.com",
+          "client_id": "986917273019-ldp6ii1mk8viv1f05i2r3dl33c4qgj4e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBGWCmxtiGUMMdsz8pnx98k6gLXha3xzDc"
+          "current_key": "AIzaSyBN5RCQS6Yqp5lvDZDWl5DadwGhItsVkYQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "584217054632-ea3bvljk4kdceu7tootie2db76thqooi.apps.googleusercontent.com",
+              "client_id": "986917273019-ldp6ii1mk8viv1f05i2r3dl33c4qgj4e.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
